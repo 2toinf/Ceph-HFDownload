@@ -1,8 +1,6 @@
 #!/bin/bash
 
 
-export FILE_LIST_PATH="./filelist.txt"
-
 
 for GROUP_FILE in group_batch_*; do
     echo "[$i] srun 启动批任务：$GROUP_FILE"
