@@ -7,5 +7,5 @@ GROUP_FILE="$1"
 # REPO_ID, REMOTE, FILE_LIST_PATH 必须提前 export
 
 while IFS= read -r PREFIX || [[ -n "$PREFIX" ]]; do
-    bash ./hf_download.sh "$PREFIX"
+    bash ./download.sh "$PREFIX"
 done < "$GROUP_FILE"
