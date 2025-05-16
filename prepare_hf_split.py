@@ -3,10 +3,10 @@ from huggingface_hub import list_repo_files
 import math
 
 # === 配置 ===
-REPO_ID = "x-humanoid-robomind/RoboMIND"
+REPO_ID = os.environ.get('REPO_ID')
 REPO_TYPE = "dataset"
 GROUP_SIZE = 20  # 每批 prefix 数量
-FILE_LIST_PATH = "filelist.txt"
+FILE_LIST_PATH = "./filelist.txt"
 BATCH_PREFIX = "group_batch_"
 
 # === 获取所有文件 ===
