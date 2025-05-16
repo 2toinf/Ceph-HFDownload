@@ -6,7 +6,7 @@ import math
 REPO_ID = os.environ.get('REPO_ID')
 REPO_TYPE = "dataset"
 GROUP_SIZE = 20  # 每批 prefix 数量
-FILE_LIST_PATH = "./filelist.txt"
+FILE_LIST_PATH = os.environ.get('REPO_ID')
 BATCH_PREFIX = "group_batch_"
 
 # === 获取所有文件 ===
