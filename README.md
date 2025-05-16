@@ -8,7 +8,6 @@
 export REPO_ID=""
 export REMOTE=""
 export FILE_LIST_PATH="./filelist.txt"
-export 
 ```
 2. 使用prepare_hf_split.py获取目标repo的文件list以及对应group
 ```
@@ -18,8 +17,7 @@ python prepare_hf_split.py
 ```
 GROUP_SIZE = 20  # 每批 prefix 数量
 ```
-来控制每个进程负责的文件数量，以此来控制进程个数
-- 
+来控制每个进程负责的文件数量，以此来控制进程个数 
 3. 提交你的所有任务
 ```
 sh submit_all_batch.sh
